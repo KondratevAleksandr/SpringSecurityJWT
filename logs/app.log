@@ -1,0 +1,58 @@
+2024-11-06 12:23:15 - Starting SpringSecurityJwtApplication using Java 20.0.2.1 with PID 6448 (C:\personal_projects\SpringSecurityJWT\target\classes started by wisp1 in C:\personal_projects\SpringSecurityJWT)
+2024-11-06 12:23:15 - No active profile set, falling back to 1 default profile: "default"
+2024-11-06 12:23:16 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-06 12:23:16 - Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interface.
+2024-11-06 12:23:17 - Tomcat initialized with port 8080 (http)
+2024-11-06 12:23:17 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-06 12:23:17 - Starting service [Tomcat]
+2024-11-06 12:23:17 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-06 12:23:17 - Initializing Spring embedded WebApplicationContext
+2024-11-06 12:23:17 - Root WebApplicationContext: initialization completed in 1668 ms
+2024-11-06 12:23:17 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-06 12:23:17 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-06 12:23:17 - HHH000026: Second-level cache disabled
+2024-11-06 12:23:18 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-06 12:23:18 - HikariPool-1 - Starting...
+2024-11-06 12:23:18 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@16cf7fd0
+2024-11-06 12:23:18 - HikariPool-1 - Start completed.
+2024-11-06 12:23:18 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-06 12:23:19 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-06 12:23:19 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-06 12:23:20 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-11-06 12:23:20 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-11-06 12:23:20 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-06 12:23:20 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-06 12:23:20 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-06 12:23:20 - Started SpringSecurityJwtApplication in 5.83 seconds (process running for 6.275)
+2024-11-06 12:23:23 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-06 12:23:23 - HikariPool-1 - Shutdown initiated...
+2024-11-06 12:23:23 - HikariPool-1 - Shutdown completed.
+2024-11-06 12:27:22 - Starting SpringSecurityJwtApplication using Java 20.0.2.1 with PID 10076 (C:\personal_projects\SpringSecurityJWT\target\classes started by wisp1 in C:\personal_projects\SpringSecurityJWT)
+2024-11-06 12:27:22 - No active profile set, falling back to 1 default profile: "default"
+2024-11-06 12:27:23 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-06 12:27:23 - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+2024-11-06 12:27:23 - Tomcat initialized with port 8080 (http)
+2024-11-06 12:27:23 - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-06 12:27:23 - Starting service [Tomcat]
+2024-11-06 12:27:23 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-06 12:27:23 - Initializing Spring embedded WebApplicationContext
+2024-11-06 12:27:23 - Root WebApplicationContext: initialization completed in 1491 ms
+2024-11-06 12:27:23 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-06 12:27:23 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-06 12:27:23 - HHH000026: Second-level cache disabled
+2024-11-06 12:27:24 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-06 12:27:24 - HikariPool-1 - Starting...
+2024-11-06 12:27:24 - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3d71e10b
+2024-11-06 12:27:24 - HikariPool-1 - Start completed.
+2024-11-06 12:27:24 - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-06 12:27:25 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-06 12:27:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-06 12:27:25 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-11-06 12:27:25 - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2024-11-06 12:27:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-06 12:27:26 - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-06 12:27:26 - Tomcat started on port 8080 (http) with context path '/'
+2024-11-06 12:27:26 - Started SpringSecurityJwtApplication in 4.702 seconds (process running for 5.097)
+2024-11-06 12:28:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-06 12:28:24 - HikariPool-1 - Shutdown initiated...
+2024-11-06 12:28:24 - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,25 @@
+<configuration>
+
+    <!-- Консольный аппендер -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern> <!-- Формат вывода -->
+        </encoder>
+    </appender>
+
+    <!-- Файловый аппендер -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/app.log</file> <!-- Путь к файлу лога -->
+        <append>true</append> <!-- Добавлять в конец файла -->
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} - %msg%n</pattern> <!-- Формат лога -->
+        </encoder>
+    </appender>
+
+    <!-- Настройка корневого логгера -->
+    <root level="info"> <!-- Уровень логирования -->
+        <appender-ref ref="CONSOLE" /> <!-- Добавляем консольный аппендер -->
+        <appender-ref ref="FILE" /> <!-- Добавляем файловый аппендер -->
+    </root>
+
+</configuration>
