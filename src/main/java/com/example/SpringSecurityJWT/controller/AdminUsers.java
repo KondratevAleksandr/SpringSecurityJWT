@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class AdminUsers {
 
+    @GetMapping("/")
+    public ResponseEntity<Object> home(){
+        return ResponseEntity.ok("Home page");
+    }
 
     @GetMapping("/user")
     @PreAuthorize("hasRole('USER')")

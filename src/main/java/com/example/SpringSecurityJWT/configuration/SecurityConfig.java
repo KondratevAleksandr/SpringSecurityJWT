@@ -35,9 +35,11 @@ public class SecurityConfig {
         // Использование базовой аутентификации (опционально)
         // Перенаправление HTTP на HTTPS
         httpSecurity
+                .requiresChannel(channel -> channel         //тут указываем что должно использоваться безопасное соед-е HTTPS
+                        .anyRequest().requiresSecure())     //если запрос HTTP перенаправляем на HTTPS
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(request -> request
-                        .requestMatchers("/login/**").permitAll()
+                        .requestMatchers("/", "/login/**").permitAll()
                         .anyRequest()
                         .authenticated())
                 .sessionManagement(session -> session.sessionCreationPolicy(STATELESS))

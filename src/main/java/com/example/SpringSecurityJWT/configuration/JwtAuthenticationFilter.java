@@ -50,12 +50,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             UserDetails userDetails = ourUserDetailedService.loadUserByUsername(username);
 
-            //проверка блокировки аккаунта
-            if (userDetails != null && !userDetails.isAccountNonLocked()) {
-                response.sendError(HttpServletResponse.SC_FORBIDDEN, "Account is locked");
-                return;
-            }
-
             if (jwtUtils.isTokenValid(jwtToken, userDetails)) {
                 // Шаг 6: Создание нового контекста безопасности
                 SecurityContext securityContext = SecurityContextHolder.createEmptyContext();
@@ -65,12 +59,6 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 usernamePasswordAuthenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 securityContext.setAuthentication(usernamePasswordAuthenticationToken);
                 SecurityContextHolder.setContext(securityContext);
-
-                ourUserDetailedService.resetFailedLoginAttempts(userDetails.getUsername());
-            } else {
-                ourUserDetailedService.increaseFailedLoginAttempts(username);
-                response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Invalid credentials");
-                return;
             }
         }
         // Шаг 7: Передача запроса на дальнейшую обработку в фильтрующий цепочке
